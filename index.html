@@ -1,20 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" />
-   <link rel="stylesheet" href="../dist/summernote.css">
-   <title>summernote</title>
+<meta content="utf-8" http-equiv="encoding">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="15 days" />
+<meta name="msnbot" content="index, follow" />
+<meta name="googlebot" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+<title>Summernote tamil Editor</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <h4> <i class="note-icon-summernote"></i> Summernote
-      <span class="label label-info">Bootstrap v3.3.5</span>
-      <span class="label label-success">with Summernote Icons</span>
-    </h4>
-    <div class="summernote"><p>Hello World</p></div>
-  </div>
-  <script data-main="src/js/app" data-editor-type="bs3" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
+<div class="container-fluid topheader">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="box box-primary innerpage-wrapper">
+                        <div class="box-header" title="Job Post Form">
+                            <h3 class="box-title">English Version</h3>
+                        </div>
+                        <div class="box-body"> 
+                            
+							<form id="form1" role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                        <textarea id="English" name="English" style="height: 300px;" placeholder="Enter text here" class="textarea form-control"></textarea>
+                                    </div>
+                                </div>                                 
+                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                    <button type="reset" class="btn btn-reset" id="resetButton">Reset</button>
+                                </div>                                
+                            </form> 
+                        </div>
+					</div>	
+			 </div>
+		 </div>		 
+         <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="box box-primary innerpage-wrapper">
+                        <div class="box-header" title="Job Post Form">
+                            <h3 class="box-title">Tamil Version</h3>
+                        </div>
+                        <div class="box-body"> 
+                            
+							<form id="form1" role="form" class="form-horizontal">
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-12">
+                                       <textarea id="Tamil" name="Tamil" style="height: 300px;" placeholder="Enter text here" class="textarea form-control"></textarea>
+                                    </div>
+                                </div>                                 
+                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                    <button type="reset" class="btn btn-reset" id="resetButton">Reset</button>
+                                </div>                                
+                            </form> 
+                        </div>
+					</div>	
+			    </div>			
+	     </div>	
+    </div>		 
+</div>                        
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.2/summernote.min.js"></script>
+<script src="https://raw.githubusercontent.com/B2OPlus/summernote/develop/lang/summernote-ta-IN.js"></script>
+<script type="text/javascript">
+         $("#English").summernote({
+    	  height: 100,
+    	  dialogsInBody: true,
+    	  placeholder: $('.textarea').attr("placeholder"),		  
+    	  toolbar: [['style', ['style','bold', 'name', 'size', 'italic', 'underline', 'clear']],
+    	    ['font', ['strikethrough', 'superscript', 'subscript']],
+    	    ['fontname', ['fontname', 'fontsize', 'color']],
+    	    ['para', ['ul', 'ol', 'paragraph', 'undo', 'redo']],
+    	    ['height', ['height']],
+    	    ['float', ['floatLeft', 'floatRight', 'floatNone']],
+    	    ['insert', ['table', 'link', 'picture', 'removeMedia', 'hr']],
+    	    ['misc', ['codeview', 'help']]]            
+        });
+		
+		$("#Tamil").summernote({
+    	  height: 150,
+    	  dialogsInBody: true,
+    	  placeholder: $('.textarea').attr("placeholder"),
+		  lang: 'ta-IN',
+    	  toolbar: [['style', ['style','bold', 'name', 'size', 'italic', 'underline', 'clear']],
+    	    ['font', ['strikethrough', 'superscript', 'subscript']],
+    	    ['fontname', ['fontname', 'fontsize', 'color']],
+    	    ['para', ['ul', 'ol', 'paragraph', 'undo', 'redo']],
+    	    ['height', ['height']],
+    	    ['float', ['floatLeft', 'floatRight', 'floatNone']],
+    	    ['insert', ['table', 'link', 'picture', 'removeMedia', 'hr']],
+    	    ['misc', ['codeview', 'help']]]            
+        });
+</script>
 </body>
 </html>
